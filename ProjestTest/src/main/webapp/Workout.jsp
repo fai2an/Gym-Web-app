@@ -115,6 +115,32 @@ body {
       color: #38A3A5;
       font-size:40px /* Light green color for benefits */
     }
+    .nav-list {
+  display: flex; /* Arrange list items horizontally */
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-list li {
+  margin-right: 20px; /* Add spacing between list items */
+}
+
+.nav-list a {
+  display: block; /* Make entire list item clickable */
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* Light text color for links */
+  padding: 10px 15px; /* Add padding for spacing */
+  transition: all 0.3s ease-in-out; /* Add hover effect transition */
+  background-color: rgba(50, 50, 50, 0.3); /* Light gray background with opacity */
+  border-radius: 5px; /* Add rounded corners */
+  text-align: center; /* Center text within buttons */
+}
+
+.nav-list a:hover {
+  background-color: rgba(34, 34, 34, 0.5); /* Darker gray background on hover */
+  color: #f1f1f1; /* Change text color on hover */
+}
   </style>
 </head>
 <body>
