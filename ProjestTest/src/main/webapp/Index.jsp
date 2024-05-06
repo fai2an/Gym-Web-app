@@ -57,19 +57,16 @@ h1 {
   background-color: #007bff;
 }
 
-.content-container { /* Container for content blocks */
-  position: relative;
-  padding: 20px; /* Add some padding for spacing */
-}
+
 
 .card { /* Individual content block styling */
   display: inline-block;
   margin: 1px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  background-color: rgba(166,219,255, 0.5); /* Semi-transparent white background */
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: all 0.3s ease-in-out; /* Smooth hover effects */
+  transition: all 0.3s ease-in-out; /* Smooth hover effects */;
 }
 
 .card:hover {
@@ -92,10 +89,18 @@ h1 {
   padding: 0 10px;
 }
 
+
 .content-container { /* Container for content blocks */
   flex: 1; /* Takes up remaining space in the flex container */
   padding: 20px;
-}
+  display: flex; /* Change to flexbox for vertical stacking */
+  flex-wrap: wrap; /* Allow content blocks to wrap on smaller screens */
+  justify-content: center; /* Center content blocks horizontally */
+  position: relative;
+  padding: 20px; /* Add some padding for spacing */
+ /* background-color:#9bd1b1;
+  opacity:0.4;
+*/}
 
 .my-form { /* Form container for buttons */
   display: flex; /* Arrange buttons horizontally */
@@ -123,12 +128,7 @@ button:hover { /* Button hover effect */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
 }
 
-  .content-container {
-  display: flex; /* Change to flexbox for vertical stacking */
-  flex-wrap: wrap; /* Allow content blocks to wrap on smaller screens */
-  justify-content: center; /* Center content blocks horizontally */
-  padding: 20px;
-}
+
 
 .card {
   display: block; /* Change to block for vertical stacking */
@@ -143,23 +143,129 @@ button:hover { /* Button hover effect */
     width: 100%; /* Make content blocks full width on small screens */
   }
 }
-  
+nav {
+  display: flex; /* Arrange elements horizontally */
+  justify-content: space-between; /* Distribute links evenly */
+  align-items: center; /* Vertically center elements */
+  padding: 10px 20px; /* Add some padding */
+  background-color: #bef2f1; /* Dark background color */
+  color: #fff; /* Light text color */
+  display: flex; /* Make navigation bar a flex container */
+  justify-content: space-between; /* Distribute links and search evenly */
+  opacity:0.7;
+}
+
+.logo {
+  font-size: 20px; /* Adjust logo font size */
+  font-weight: bold; /* Make logo text bold */
+  margin-right: 20px; /* Add margin to the right of the logo */
+  overflow: hidden; /* Hide overflowing text if needed */
+  color: #fff; /* Assuming white color for brand name text */
+}
+
+.logo a {
+  color: #fff; /* White text color for logo */
+  text-decoration: none; /* Remove underline from logo */
+}
+
+.nav-list {
+  display: flex; /* Arrange list items horizontally */
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-list li {
+  margin-right: 20px; /* Add spacing between list items */
+}
+
+.nav-list a {
+  display: block; /* Make entire list item clickable */
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* Light text color for links */
+  padding: 10px 15px; /* Add padding for spacing */
+  transition: all 0.3s ease-in-out; /* Add hover effect transition */
+  background-color: rgba(50, 50, 50, 0.3); /* Light gray background with opacity */
+  border-radius: 5px; /* Add rounded corners */
+  text-align: center; /* Center text within buttons */
+}
+
+.nav-list a:hover {
+  background-color: rgba(34, 34, 34, 0.5); /* Darker gray background on hover */
+  color: #f1f1f1; /* Change text color on hover */
+  background-color:#313146;
+}
+
+.search-container {
+  margin-left: auto;
+  padding:auto; /* Push search container to the left */
+}
+
+
+
+.search-container input[type="text"] {
+  width: 100%; /* Set width of search input */
+  padding: 10px; /* Add padding to search input */
+  border: none; /* Remove default border from input */
+  border-radius: 5px; /* Add rounded corners to input */
+  background-color: #333; /* Dark background color for*/
+}
+.text-styles {
+  /* Basic Font Styling */
+  font-family: Verdana; /* Fallback font for compatibility */
+  font-size: 31px; /* Default font size */
+  color: #a4ab9c; /* Dark gray text color */
+  }
+  .logo,
+.search-container {
+  display: inline-block;
+}
+font-size: 20px; /* Adjust font size for brand name */
+  font-weight: bold; /* Make brand name bold */
+  color: #fff; /* Assuming white color for brand name text */
+  }  
+  .search-left{
+  position:left;
+  }
+  .heading{
+  padding:10px 15px;
+  margin:auto;
+  content-align:center;
+  border:1px white solid;
+  color:#014667;
+  font-size:24px;
+  }
 </style>
 </head>
 <body>
-<h1>Fitness App</h1>
-
-  <nav id="menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+  <ul class="nav-list">
+  <li><a href="Index.jsp">Home</a></li>
+  <li><a href="#">Features</a></li>
+  <li><a href="#">Pricing</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Contact</a></li>
+  <li> <p class="heading">Fitness App</p></li>
+  <li class="search-container">
   
-  <div class="content-container">  <div class="card">
+</li>
+<div class="search-left">
+<form action="#">
+    <input type="text" placeholder="Search..." />
+    <button type="submit"><i class="fas fa-search"></i></button>
+  </form></div>
+</ul>
+
+
+<div class="logo">
+   </div>
+
+</nav>
+  
+  <div class="content-container">
+    <div class="card">
         <a href="Workout.jsp">
+        <p></p>
           <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Workouts" />
         </a>
         <h2>Workout</h2>
@@ -177,6 +283,7 @@ button:hover { /* Button hover effect */
 
       <div class="card">
         <a href="nutrition.jsp">
+        <p></p>
           <img src="https://images.pexels.com/photos/5591663/pexels-photo-5591663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Nutrition" />
         </a>
         <h2>Nutrition</h2>
@@ -194,6 +301,7 @@ button:hover { /* Button hover effect */
 
       <div class="card">
         <a href="Yoga.jsp">
+        <p></p>
           <img src="https://images.pexels.com/photos/3094230/pexels-photo-3094230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Yoga" />
         </a>
         <h2>Yoga</h2>

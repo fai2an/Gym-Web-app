@@ -115,6 +115,8 @@ header {
   padding: 20px;
   border-radius: 5px;
   margin-top: 20px;
+  justify-content: center;
+  
 }
 .choose {
   text-align: center; /* Center text alignment */
@@ -127,9 +129,119 @@ header {
   /* border-bottom: 1px dotted #ccc;  */  /* Add an underline (uncomment to use) */
   /* padding: 5px 10px;  */             /* Add some padding (uncomment to use) */
 }
+
+nav {
+  display: flex; /* Arrange elements horizontally */
+  justify-content: space-between; /* Distribute links evenly */
+  align-items: center; /* Vertically center elements */
+  padding: 10px 20px; /* Add some padding */
+  background-color: #e4e4e3; /* Dark background color */
+  color: #e4e4e3; /* Light text color */
+  display: flex; /* Make navigation bar a flex container */
+  justify-content: space-between; /* Distribute links and search evenly */
+  opacity:0.9;
+}
+
+
+.logo {
+  font-size: 20px; /* Adjust logo font size */
+  font-weight: bold; /* Make logo text bold */
+  margin-right: 20px; /* Add margin to the right of the logo */
+  overflow: hidden; /* Hide overflowing text if needed */
+  color: #fff; /* Assuming white color for brand name text */
+}
+
+.logo a {
+  color: #fff; /* White text color for logo */
+  text-decoration: none; /* Remove underline from logo */
+}
+
+.nav-list {
+  display: flex; /* Arrange list items horizontally */
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  
+}
+
+.nav-list li {
+  margin-right: 20px; /* Add spacing between list items */
+  color: 8889bb;
+	}
+
+.nav-list a {
+  display: block; /* Make entire list item clickable */
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* Light text color for links */
+  padding: 10px 15px; /* Add padding for spacing */
+  transition: all 0.3s ease-in-out; /* Add hover effect transition */
+  background-color: rgba(50, 50, 50, 0.3); /* Light gray background with opacity */
+  border-radius: 5px; /* Add rounded corners */
+  text-align: center; /* Center text within buttons */
+}
+
+.nav-list a:hover {
+  background-color: rgba(34, 34, 34, 0.5); /* Darker gray background on hover */
+  background-color: #8889bb; /* Change text color on hover */
+}
+
+.search-container {
+  margin-left: auto;
+  padding:auto; /* Push search container to the left */
+}
+
+
+
+.search-container input[type="text"] {
+  width: 100%; /* Set width of search input */
+  padding: 10px; /* Add padding to search input */
+  border: none; /* Remove default border from input */
+  border-radius: 5px; /* Add rounded corners to input */
+  background-color: #333; /* Dark background color for*/
+}
+.text-styles {
+  /* Basic Font Styling */
+  font-family: Verdana; /* Fallback font for compatibility */
+  font-size: 31px; /* Default font size */
+  color: #a4ab9c; /* Dark gray text color */
+  }
+  .logo,
+.search-container {
+  display: inline-block;
+}
+font-size: 20px; /* Adjust font size for brand name */
+  font-weight: bold; /* Make brand name bold */
+  color: #fff; /* Assuming white color for brand name text */
+  }  
+  search-left{
+  element-justify:left;
+  }
 </style>
 </head>
 <body>
+<nav>
+  <ul class="nav-list">
+  <li><a href="Index.jsp">Home</a></li>
+  <li><a href="#">Features</a></li>
+  <li><a href="#">Pricing</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Contact</a></li>
+  <li> <p>Fitness App</p></li>
+  <li class="search-container">
+  
+</li>
+<div class="search-left">
+<form action="#">
+    <input type="text" placeholder="Search..." />
+    <button type="submit"><i class="fas fa-search"></i></button>
+  </form></div>
+</ul>
+
+
+<div class="logo">
+   </div>
+
+</nav>
   <div class="container">
     <header>
     <center>
