@@ -14,12 +14,12 @@
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .form-container {
   /* Form container with shadow box effect */
-  background-color: #fff; /* White background for the form */
+  background-color: #fdf5e6 ; /* White background for the form */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Inner shadow */
   margin: 0 auto; /* Center the form horizontally */
