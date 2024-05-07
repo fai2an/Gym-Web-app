@@ -45,6 +45,8 @@ body {
   margin: 0 auto; /* Center content horizontally within the main section */
   /* Optional height for consistent plan card area: */
   height: 400px; /* Adjust as needed */
+  transition: all 0.3s ease-in-out; 
+  
 }
 
 .plan-card {
@@ -52,11 +54,12 @@ body {
   background-color: #fff; /* White card background */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
   border-radius: 5px; /* Rounded corners */
-  margin: 10px;
-  transition: all 0.3s;
+  margin: 1px;
+  transition: all 0.3s ease-in-out;
   position: relative; /* Enables image background positioning */
   overflow: hidden; /* Ensures image doesn't overflow the card */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  transform: scale(0.9);
 }
 
 .plan-card img {
@@ -67,12 +70,14 @@ body {
   top: 0;
   left: 0;
   opacity: 1; /* Set image opacity for better text visibility */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  
 }
 
 .plan-card:hover .plan-card img {
   opacity: 1; /* Increase opacity on hover for a subtle highlight */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  transform: scale(0.9);
 }
 
 .plan-card .plan-card-content {
@@ -109,8 +114,8 @@ header {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #7C959D;
-  opacity:0.8; /* Adjust opacity as needed */
+  background-color: #E0E7EA;
+  opacity:1; /* Adjust opacity as needed */
   border-radius: 5px;
 }
 .nutrients {

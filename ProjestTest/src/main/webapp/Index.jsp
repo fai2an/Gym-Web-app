@@ -81,6 +81,7 @@ h1 {
   
 }
  .card:hover img {
+ 	  opacity:1;
       transform: scale(0.9);
     }
 .card h2 {
@@ -156,7 +157,7 @@ nav {
   background-color: #bef2f1; /* Dark background color */
   color: #fff; /* Light text color */
   justify-content: space-between; /* Distribute links and search evenly */
-  opacity:0.7;
+  opacity:1;
   position: fixed; /* Fix the navigation bar to the top */
   top: 0; /* Position it at the top of the viewport */
   left: 0; /* Position it at the left of the viewport */
@@ -218,7 +219,7 @@ nav {
 
 .search-container input[type="text"] {
   width: 100%; /* Set width of search input */
-  padding: 10px; /* Add padding to search input */
+  padding: 20px; /* Add padding to search input */
   border: none; /* Remove default border from input */
   border-radius: 5px; /* Add rounded corners to input */
   background-color: #333; /* Dark background color for*/
@@ -246,6 +247,7 @@ font-size: 20px; /* Adjust font size for brand name */
   border:1px white solid;
   color:#EAC3EF;
   font-size:24px;
+  position:center;
   }
 </style>
 </head>
@@ -312,7 +314,7 @@ font-size: 20px; /* Adjust font size for brand name */
       </div>
 
       <div class="card">
-        <a href="Yoga.jsp">
+        <a href="yoga.jsp">
         <p></p>
           <img src="https://images.pexels.com/photos/3094230/pexels-photo-3094230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Yoga" />
         </a>

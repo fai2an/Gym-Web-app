@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* Global Styles */
+body {
+  font-family: sans-serif; /* Choose a preferred font family here */
+  margin: 0;
+  padding: 0;
+  background-image: url("images/background-image1.jpg"), url("images/background-image2.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top, center bottom;
+  background-size: cover, cover;
+  background-blend-mode: multiply; /* Darken background images slightly */
+  color: #333; /* Set text color to dark gray for classic feel */
+}
+
+/* Container Styles (Optional) */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5rem 0; /* Adjust padding as needed */
+}
+
+/* Section Styles */
+.yoga-benefits,
+.iyengar-yoga,
+.getting-started {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  background-color: rgba(245, 222, 179, 0.7); /* Semi-transparent cream background */
+  transition: all 0.3s ease-in-out; /* Smooth transition effects on hover */
+}
+
+.yoga-benefits:hover,
+.iyengar-yoga:hover,
+.getting-started:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+/* Image Styles (Improved) */
+img {
+  max-width: 100px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.yoga-benefits:hover img,
+.iyengar-yoga:hover img,
+.getting-started:hover img {
+  transform: scale(0.9); /* Scale down image slightly on hover */
+}
+
+/* Benefit List Styles */
+.yoga-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  color: #663300; /* Classic brown color for list items */
+}
+
+.yoga-benefits li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Benefit List Hover Effect (Optional) */
+.yoga-benefits li:hover {
+  color: #996633; /* Darker brown color on hover */
+  cursor: pointer;
+}
+
+/* Benefit Icon Styles (Improved) */
+.yoga-benefits img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.yoga-benefits:hover img {
+  transform: rotate(10deg); /* Slight rotation on hover for a playful effect */
+}
+
+/* Button Styles (Unmodified) */
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #663300;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #996633;
+}
+
+/* Button Link Styles (Unmodified) */
+.button a {
+  color: inherit;
+  text-decoration: none;
+}
