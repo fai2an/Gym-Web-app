@@ -28,8 +28,8 @@ body {
   /* Additional styles for a shadow box effect */
   margin: 20px auto; /* Add margin for better centering */
   max-width: 1000px; /* Set a maximum width */
-  background-color: #fff; /* White background */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow around the container */
+  background-color: #; /* White background */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); /* Shadow around the container */
   border-radius: 5px; /* Rounded corners */
 }
 
@@ -91,6 +91,8 @@ body {
 header,
 .main {
   z-index: 1; /* Ensure content appears on top of the overlay (optional) */
+
+  
 }
 .plan-card p {
   position: absolute; /* Enables absolute positioning */
@@ -107,11 +109,12 @@ header {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+  background-color: #7C959D;
+  opacity:0.8; /* Adjust opacity as needed */
   border-radius: 5px;
 }
 .nutrients {
-  background-color: #f5f5f5;
+  background-color: #E0E7EA;
   padding: 20px;
   border-radius: 5px;
   margin-top: 20px;
@@ -242,7 +245,7 @@ font-size: 20px; /* Adjust font size for brand name */
    </div>
 
 </nav>
-  <div class="container">
+  <div class="container" bgcolor=#96A8AE>
     <header>
     <center>
       <h1>Nutrition Plans</h1>

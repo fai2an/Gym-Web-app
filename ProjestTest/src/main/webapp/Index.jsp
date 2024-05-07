@@ -103,8 +103,10 @@ h1 {
   padding: 20px; /* Add some padding for spacing */
  /* background-color:#9bd1b1;
   opacity:0.4;
-*/}
+  */
+  margin-top:60px;
 
+}
 .my-form { /* Form container for buttons */
   display: flex; /* Arrange buttons horizontally */
   justify-content: center; /* Distribute buttons evenly */
@@ -147,15 +149,20 @@ button:hover { /* Button hover effect */
   }
 }
 nav {
-  display: flex; /* Arrange elements horizontally */
+  /*display: flex; /* Arrange elements horizontally */
   justify-content: space-between; /* Distribute links evenly */
   align-items: center; /* Vertically center elements */
-  padding: 10px 20px; /* Add some padding */
+  padding: 5px 20px; /* Add some padding */
   background-color: #bef2f1; /* Dark background color */
   color: #fff; /* Light text color */
-  display: flex; /* Make navigation bar a flex container */
   justify-content: space-between; /* Distribute links and search evenly */
   opacity:0.7;
+  position: fixed; /* Fix the navigation bar to the top */
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Position it at the left of the viewport */
+  width: 100%; /* Make it span the entire width */
+  z-index: 10; /* Ensure it stays on top of other elements */
+  transition: background-color 0.3s ease-in-out;
 }
 
 .logo {
@@ -198,6 +205,9 @@ nav {
   color: #f1f1f1; /* Change text color on hover */
   background-color:#313146;
 }
+/*.nav-list li p {
+		position:center;
+}*/
 
 .search-container {
   margin-left: auto;
@@ -222,7 +232,6 @@ nav {
   .logo,
 .search-container {
   display: inline-block;
-}
 font-size: 20px; /* Adjust font size for brand name */
   font-weight: bold; /* Make brand name bold */
   color: #fff; /* Assuming white color for brand name text */
@@ -235,7 +244,7 @@ font-size: 20px; /* Adjust font size for brand name */
   margin:auto;
   content-align:center;
   border:1px white solid;
-  color:#014667;
+  color:#EAC3EF;
   font-size:24px;
   }
 </style>
