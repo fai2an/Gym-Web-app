@@ -82,7 +82,7 @@
 <body class="workout-page">
   <div class="container">
     <div class="left-side">
-      <img src="workout-image.jpg" alt="Text description of the workout plan image" class="course-image">
+     <img src="images/workout.jpg" alt="Text description of the workout plan image" class="course-image">
       <div class="registration">
         <h2>Beginner's Workout Plan</h2>
         <p>

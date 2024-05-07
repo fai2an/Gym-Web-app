@@ -59,7 +59,8 @@ select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border
+}
+
   </style> 
   </head>
 <body>

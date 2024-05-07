@@ -69,8 +69,8 @@ h1 {
   transition: all 0.3s ease-in-out; /* Smooth hover effects */;
 }
 
-.card:hover {
-  transform: scale(1.02); /* Slight scale up on hover */
+.card:hover  {
+  transform: scale(1.1); /* Slight scale up on hover */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
 }
 
@@ -78,8 +78,11 @@ h1 {
   width: 100%;
   height: 200px; /* Adjust image height as needed */
   object-fit: cover; /* Crop image to fit container */
+  
 }
-
+ .card:hover img {
+      transform: scale(0.9);
+    }
 .card h2 {
   padding: 10px 0;
   font-size: 1.2em;
